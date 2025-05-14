@@ -6,8 +6,6 @@ export const Home = () => {
 
 
     return (
-        <PageWrapper title="Home">
             <HomeFeature />
-        </PageWrapper>
     )
 }

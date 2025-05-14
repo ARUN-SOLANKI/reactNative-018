@@ -1,10 +1,12 @@
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     input: {
         borderWidth: 1,
         borderColor: '#000',
-        borderRadius:8
+        borderRadius: 8,
+        paddingHorizontal: Platform.OS === "ios" ? 10 : 0,
+        paddingVertical: Platform.OS === "ios" ? 10 : 0
     },
     label: {
         fontSize: 12,
